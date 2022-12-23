@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home</title>
+  <link rel="stylesheet" href="assets_home/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+  <!-- <link rel="stylesheet" href="assets_home/fonts/font-awesome.min.css"> -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+  <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!--   
+ <div class="container">
+<a href="admin.html"  class="btn btn-primary" id="register">Admin Dashboard</a>
+<hr>
+<a href="registration.html"  class="btn btn-primary" id="register">Register</a>
+<hr>
+<a href="vote.html"  class="btn btn-primary" id="register">Vote</a>
+
+</div> -->
+
+<header>
+  <div class="px-3 py-2 text-bg-dark">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-centerx justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <li>
+            <a href="/" class="nav-link text-secondary">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="admin.html" class="nav-link text-white">
+              Admin
+            </a>
+          </li>
+          <li>
+            <a href="register.html" class="nav-link text-white">
+              Register
+            </a>
+          </li>
+          <li>
+            <a href="login.html" class="nav-link text-white">
+              Vote
+            </a>
+          </li>
+          <li>
+            <a href="results.html" onclick="App.checkTime();" class="nav-link text-white">
+              Results
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<body id="page-top">
+
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom text-center">Process for voting system based on blockchain</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <p style="font-size: 2em;">1</p>
+        <h3 class="fs-2">Upload Candidate List</h3>
+      </div>
+      <div class="feature col">
+        <p style="font-size: 2em;">2</p>
+        <h3 class="fs-2">Upload Voters List</h3>
+      </div>
+      <div class="feature col">
+        <p style="font-size: 2em;">3</p>
+        <h3 class="fs-2">Start Election</h3>
+      </div>
+    </div>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <p style="font-size: 2em;">4</p>
+        <h3 class="fs-2">Voting Starts</h3>
+      </div>
+      <div class="feature col">
+        <p style="font-size: 2em;">5</p>
+        <h3 class="fs-2">Result</h3>
+      </div>
+    </div>
+  </div>
+  <script src="assets_home/js/jquery.min.js"></script>
+  <script src="assets_home/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="./assets_home/js/agency.js"></script>
+  <!-- adding firebase proj-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCkEtyqE9vpFy4tQe5YLk1ce20m7CDuP9w",
+      authDomain: "nodemail-63bf8.firebaseapp.com",
+      databaseURL: "https://nodemail-63bf8.firebaseio.com",
+      projectId: "nodemail-63bf8",
+      storageBucket: "nodemail-63bf8.appspot.com",
+      messagingSenderId: "428804642507",
+      appId: "1:428804642507:web:43c8377a4f0c608faaad4e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+  </script>
+  <!-- <script src="./js/bootstrap.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/web3.min.js"></script>
+  <script src="./js/truffle-contract.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
